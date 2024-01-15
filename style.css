@@ -1,0 +1,109 @@
+:root{
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+    font-family: "Outfit", sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--paleBlue);
+    height: 100vh;
+}
+
+.principalCard{
+    width: 90%;
+    border-radius: 2rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgHeader{
+    width: 100%;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+
+.subtitle{
+    text-align: center;
+    width: 90%;
+    margin-bottom: 2rem;
+}
+
+.planDescription{
+    border-radius: 1rem;
+    background-color: var(--paleBlue);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.imgPlan{
+    width: 20%;
+}
+
+.annualPlan{
+    font-weight: 700;
+}
+
+.numbers{
+    color: grey;
+}
+
+.changeButton{
+    color: var(--brightBlue);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.proceed{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brightBlue);
+    color: white;
+    width: 90%;
+    height: 4rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.proceed a{
+    text-align: center;
+}
+
+.cancel{
+    margin: 2rem 0 ;
+    font-weight: 900;
+    color: grey;
+}
+
+.attribution { font-size: 11px; text-align: center; margin-top: 2rem;}
+    
+.attribution a { color: hsl(228, 45%, 44%);}
+
+a{
+    text-decoration: none;
+}
+
+@media (min-width: 768px) {
+    .principalCard{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .principalCard{
+        width: 30%;
+    }
+}
+
+
+
